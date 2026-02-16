@@ -971,27 +971,8 @@
 				
 				</style>`;
 
-            document.head.insertAdjacentHTML(
-              "beforeend",
-              preloaderStyleTemplate
-            );
 
-            const preloaderTemplate = document.querySelector("#fls-preloader");
-
-            const preloaderBody = document.createElement("div");
-            preloaderBody.classList.add("fls-preloader-body");
-
-            const preloaderBodyWidth =
-              preloaderTemplate.appendChild(preloaderBody).offsetWidth;
-
-            const preloaderPrg = `
-						<svg style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; fill: ${fill}; stroke: ${stroke}; stroke-width: ${strokeWidth};">
-							<circle class="preloader-circle" stroke-linecap="round" cx=${
-                preloaderBodyWidth / 2
-              } cy=${preloaderBodyWidth / 2} r="${
-              (preloaderBodyWidth * (1 - parseFloat(strokeWidth) / 100)) / 2
-            }"></circle>
-						</svg>
+        
 						<div class="preloader-counter"> 
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 112 56" fill="none">
   <path d="M101.062 12.1519C101.077 12.1519 101.084 12.1519 101.088 12.1519C101.077 12.1519 101.055 12.1483 101.022 12.1447C100.989 12.1375 100.949 12.1375 100.905 12.1375C100.978 12.1447 101.033 12.1519 101.062 12.1519Z" fill="#6F68C3"/>
