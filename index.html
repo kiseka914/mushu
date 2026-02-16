@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CATE</title>
+    <title>MUSHU</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="description" content="CATE Coin" />
+    <meta name="description" content="MUSHU Coin" />
 
     <link rel="stylesheet" href="css/style.min.css?_v=20241010183240" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -282,7 +282,7 @@
                   class="buy__item buy__item--3"
                 >
                   <div class="buy__label">
-                    <span>Swap eth for $cate</span>
+                    <span>Swap eth for $MUSHU</span>
                   </div>
                   <div class="buy__numb">
                     <img class="ibg" src="img/buy/3.png" alt="Image" />
@@ -989,7 +989,6 @@
             htmlDocument = document.documentElement;
             let imagesLoadedCount = (progress = 0);
 
-            htmlDocument.classList.add("loading");
             htmlDocument.classList.add("lock");
 
             preloaderImages.forEach((preloaderImage) => {
@@ -1019,9 +1018,6 @@
             }
 
             function addLoadedClass() {
-              htmlDocument.classList.add("loaded");
-              htmlDocument.classList.remove("lock");
-              htmlDocument.classList.remove("loading");
               setInterval(() => {
                 preloaderTemplate.remove();
               }, 100);
